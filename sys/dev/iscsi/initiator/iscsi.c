@@ -121,7 +121,8 @@ static struct cdevsw iscsi_cdevsw = {
 static int
 iscsi_open(struct cdev *dev, int flags, int otype, struct thread *td)
 {
-     debug_called(8);
+	int i;
+	 debug_called(8);
 
      debug(7, "dev=%d", dev2unit(dev));
 
